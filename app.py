@@ -17,7 +17,8 @@ def load_pricing_csv(uploaded_file=None):
         st.stop()
 
     latest_file = files[0]
-    df = pd.read_csv(latest_file, encoding='utf-8-sig')
+    df = pd.read_csv(latest_file, encoding='utf-8')
+
     return df, latest_file.name
 
 # -------- 2. Streamlit 畫面 --------
